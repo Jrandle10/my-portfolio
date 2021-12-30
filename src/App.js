@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Home from "./components/Home";
 import About from "./components/About";
 import SinglePost from "./components/SinglePost";
@@ -9,11 +9,11 @@ import Project from "./components/Project";
 function App() {
   return (
     <Routes>
-      <Route component={Home} path='/' /> 
-      <Route component={About} path='/about' />
-      <Route component={SinglePost} path='/post/:slug' />
-      <Route component={Post} path='/post' />
-      <Route component={Project} path='/project' />
+      <Route element={<Home />} path='/' /> 
+      <Route element={<About />} path='/about' />
+      <Route element={<SinglePost />} path='/post/:id' />
+      <Route element={<Post />} path='/post' />
+      <Route element={<Project />} path='/project' />
     </Routes>
   )
 }
