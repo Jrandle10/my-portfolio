@@ -14,7 +14,7 @@ function App() {
       <Routes>
         <Route element={<Home />} path='/' /> 
         <Route element={<About />} path='/about' />
-        <Route element={<SinglePost />} path='/post/:id' />
+        <Route element={<SinglePost />} path='/post/:slug' />
         <Route element={<Post />} path='/post' />
         <Route element={<Project />} path='/project' />
       </Routes>
