@@ -19,13 +19,13 @@ export default function Project() {
   }, []);
 
   return (
-    <main className='bg-green-100 min-h-screen p-12'>
+    <main className='bg-pink-100 min-h-screen p-12'>
       <section className='container mx-auto'>
         <h1 className='text-5xl flex justify-center cursive'>My Projects</h1>
         <h2 className='text-lg text-gray-600 flex justify-center mb-12'>
-        Welcome to my projects page
+        Check out my projects below
         </h2>
-        <section className='grid grid-cols-2 gap-8'>
+        <section className='grid grid-cols-1 gap-8   md:grid md:grid-cols-2 md:gap-8'>
           {projectData && 
             projectData.map((project, index) => (
             <article className='relative rounded-lg shadow-xl bg-white p-16'>

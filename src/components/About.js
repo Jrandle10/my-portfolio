@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import sanityClient from '../client.js';
-import aboutme from '../aboutme.jpeg';
+import clouds from '../clouds.jpeg';
 import imageUrlBuilder from '@sanity/image-url';
 import BlockContent from '@sanity/block-content-to-react';
 
@@ -28,11 +28,11 @@ export default function About() {
   if (!author) return <div>Loading...</div>
 
   return (
-    <main className='relative'>
+    <main>
       <img 
-        src={aboutme} 
-        alt='About Me' 
-        className='absolute w-full' 
+        src={clouds} 
+        alt='cloud background' 
+        className='absolute w-full h-full object-cover bg-auto' 
       />
       <div className='p-10 lg:pt-48 container mx-auto relative'>
         <section className='bg-green-800 rounded-lg shadow-2xl lg:flex p-20'>

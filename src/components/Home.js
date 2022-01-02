@@ -1,5 +1,5 @@
 import React from 'react'
-import image from "../city-background.jpeg"
+import image from "../homebackground.png"
 
 export default function Home() {
   return (
@@ -13,9 +13,9 @@ export default function Home() {
         className='relative flex justify-center     min-h-screen pt-12 lg:pt-64 px-8'
       >
         <h1 
-          className='text-6xl text-red-500 font-bold cursive leading-none lg:leading-snug home-name'
+          className='text-6xl text-blue-500 font-bold cursive leading-none lg:leading-snug home-name'
         >
-        Wussup! I'm Ja!
+        Welcome to Ja's Portfolio
         </h1>
       </section>
     </main>
