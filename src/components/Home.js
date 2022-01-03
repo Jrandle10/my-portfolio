@@ -6,11 +6,11 @@ export default function Home() {
     <main>
       <img 
       src={image} 
-      alt='city background' 
-      className='absolute object-cover w-full h-full' 
+      alt='laptop background' 
+      className='sm:absolute sm:object-cover sm:w-full sm:h-full absolute w-full' 
       />
       <section 
-        className='relative flex justify-center     min-h-screen pt-12 lg:pt-64 px-8'
+        className='sm:relative  sm:justify-center     sm:min-h-screen sm:pt-12 lg:pt-64 px-8 relative'
       >
         <h1 
           className='text-6xl text-blue-500 font-bold cursive leading-none lg:leading-snug home-name'
