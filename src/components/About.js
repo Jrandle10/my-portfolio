@@ -28,12 +28,12 @@ export default function About() {
   if (!author) return <div>Loading...</div>
 
   return (
-    <main>
-      <img 
+    <main className='bg-pink-100 min-h-screen min-w-full p-12'>
+      {/* <img 
         src={clouds} 
         alt='cloud background' 
-        className='absolute w-full h-full object-cover bg-auto' 
-      />
+        className='sm:absolute sm:w-full sm:h-full sm:object-cover sm:bg-auto' 
+      /> */}
       <div className='p-10 lg:pt-48 container mx-auto relative'>
         <section className='bg-blue-800 rounded-lg shadow-2xl lg:flex p-20'>
           <img 
